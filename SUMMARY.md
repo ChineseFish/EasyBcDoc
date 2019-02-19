@@ -1,11 +1,10 @@
 # Summary
 
 * [介绍](README.md)
-* [部署](chapter1/README.md)
+* [服务器部署](chapter1/README.md)
     * [环境准备](chapter1/section1.md)
-    * [本地部署](chapter1/section2.md)
-    * [单节点部署](chapter1/section3.md)
-    * [多节点部署](chapter1/section4.md)
+    * [配置](chapter1/section2.md)
+    * [启动](chapter1/section3.md)
 * [客户端安装](chapter2/README.md)
     * [环境准备](chapter2/section1.md)
     * [配置](chapter2/section2.md)
