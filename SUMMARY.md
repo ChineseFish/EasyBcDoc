@@ -19,7 +19,7 @@
         * [正确性](chapter3/section3/section3.md)
         * [一致性](chapter3/section3/section4.md)
         * [可用性](chapter3/section3/section5.md)
-        * [优化](chapter3/section3/section6.md)
+        * [总结](chapter3/section3/section6.md)
     * [回收硬盘空间](chapter3/section4.md)
     * [简化的支付确认](chapter3/section5.md)
     * [结论](chapter3/section6.md)
