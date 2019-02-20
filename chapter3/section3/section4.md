@@ -1,16 +1,19 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # 一致性
 
-为了满足一致性的要求，必须表明不论nonfaulty节点属于哪一个UNL，它们最终都回会在相同的一组交易上达成共识。因为每个Server节点可能属于不同的UNL，所以一致性无法通过正确性证明来进行保证。例如，如果对UNL的成员资格没有任何限制，并且UNL的大小不大于\\(0.2 * n_{total}\\)，其中\\(n_{total}\\)是整个分布式支付系统中节点的总量，那么就有可能产生一个分叉。这可以用一个简单的例子来说明，如下图：
+为了满足一致性的要求，必须表明不论nonfaulty节点属于哪一个UNL，它们最终都回会在相同的一组交易上达成共识。因为每个Server节点可能属于不同的UNL，所以一致性无法通过正确性证明来进行保证。例如，如果对UNL的成员资格没有任何限制，并且UNL的大小不大于{% math %}0.2 * n_{total}{% endmath %}，其中{% math %}n_{total}{% endmath %}是整个分布式支付系统中节点的总量，那么就有可能产生一个分叉。这可以用一个简单的例子来说明，如下图：
+<br>
+<br>
 ![younghz的Markdown库](/asserts/2.bmp "图二")
-
-<strong align = "center">图2.防止两个UNL之间出现分叉所需的连接性示例。</strong>
-
-想象UNLs集合中的两个UNL，每一个都大于\\(0.2 * n_{total}\\)。所谓UNL，我们指的是一组Server节点，其中每个Server节点的UNL都是相同的。因为这两个UNL不共享任何成员，所以每个UNL都有可能进行一次正确的共识过程。如果两个UNL的连通性超过\\(0.2 * n_{total}\\)，那么分叉就不可能产生了，因为两个UNL之间存在分歧会阻挠整个系统在80%阈值上达成共识。
-
+<div align="center"><strong style="width:80%">图2.防止两个UNL之间出现分叉所需的连接性示例。</strong></div>
+<br>
+<br>
+想象UNLs集合中的两个UNL，每一个都大于{% math %}0.2 * n_{total}{% endmath %}。所谓UNL，我们指的是一组Server节点，其中每个Server节点的UNL都是相同的。因为这两个UNL不共享任何成员，所以每个UNL都有可能进行一次正确的共识过程。如果两个UNL的连通性超过{% math %}0.2 * n_{total}{% endmath %}，那么分叉就不可能产生了，因为两个UNL之间存在分歧会阻挠整个系统在80%阈值上达成共识。
 下面是达成共识所需要的最小连通率的公式：
-$$|UNL_i \cap UNL_j| \geq \frac{1}{5}max(|UNL_i|, |UNL_j|) \forall i,j \qquad (3)$$
-
+<br>
+<br>
+<div align="center">$$|UNL_i \cap UNL_j| \geq \frac{1}{5}max(|UNL_i|, |UNL_j|) \forall i,j \qquad (3)$$</div>
+<br>
+<br>
 这个边界假设UNL是一种团状结构，UNL中部分Server节点同时也属于其它的UNL，最小连通率保证没有任何两个UNL能够就欺诈交易达成共识，这是因为两个UNL无法就欺诈交易达到80%的共识门槛。如果还考虑到UNL之间的间接边，则可能会有更紧的边界（达成共识所需要的最小连通率会更加小）。如果网络的结构不是团状的，由于UNL之间的纠缠程度更大，分叉将变得更难实现。
 
 值得注意的是，这里没有对相交节点的性质作出任何假设。两个UNL的交集可能包括faulty节点，但只要交集的大小大于保证共识过程所需的阀值，并且faulty节点的总数小于满足正确性所需的阀值，则正确性和一致性都可以得到保证。也就是说，共识达成与否仅取决于UNL之间节点的相交数量，而不是取决于UNL之间unfaulty节点的相交数量。
