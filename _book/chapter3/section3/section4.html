@@ -1,0 +1,465 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一致性 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section5.html" />
+    
+    
+    <link rel="prev" href="section3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chapter1/">
+            
+                <a href="../../chapter1/">
+            
+                    
+                    服务器部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../chapter2/">
+            
+                <a href="../../chapter2/">
+            
+                    
+                    客户端安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    原理介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section1.html">
+            
+                <a href="../section1.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section2.html">
+            
+                <a href="../section2.html">
+            
+                    
+                    交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Ripple共识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    交易校验和合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    交易共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    正确性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    一致性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../section4.html">
+            
+                <a href="../section4.html">
+            
+                    
+                    回收硬盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../section5.html">
+            
+                <a href="../section5.html">
+            
+                    
+                    简化的支付确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../section6.html">
+            
+                <a href="../section6.html">
+            
+                    
+                    结论
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >一致性</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E00;&#x81F4;&#x6027;">&#x4E00;&#x81F4;&#x6027;</h1>
+<p>&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x4E00;&#x81F4;&#x6027;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x5FC5;&#x987B;&#x8868;&#x660E;&#x4E0D;&#x8BBA;nonfaulty&#x8282;&#x70B9;&#x5C5E;&#x4E8E;&#x54EA;&#x4E00;&#x4E2A;UNL&#xFF0C;&#x5B83;&#x4EEC;&#x6700;&#x7EC8;&#x90FD;&#x56DE;&#x4F1A;&#x5728;&#x76F8;&#x540C;&#x7684;&#x4E00;&#x7EC4;&#x4EA4;&#x6613;&#x4E0A;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x3002;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;Server&#x8282;&#x70B9;&#x53EF;&#x80FD;&#x5C5E;&#x4E8E;&#x4E0D;&#x540C;&#x7684;UNL&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x81F4;&#x6027;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x6B63;&#x786E;&#x6027;&#x8BC1;&#x660E;&#x6765;&#x8FDB;&#x884C;&#x4FDD;&#x8BC1;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x5BF9;UNL&#x7684;&#x6210;&#x5458;&#x8D44;&#x683C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x9650;&#x5236;&#xFF0C;&#x5E76;&#x4E14;UNL&#x7684;&#x5927;&#x5C0F;&#x4E0D;&#x5927;&#x4E8E;<script type="math/tex; ">0.2 * n_{total}</script>&#xFF0C;&#x5176;&#x4E2D;<script type="math/tex; ">n_{total}</script>&#x662F;&#x6574;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x4E2D;&#x8282;&#x70B9;&#x7684;&#x603B;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5206;&#x53C9;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+<br>
+<br>
+<img src="../../asserts/2.bmp" alt="younghz&#x7684;Markdown&#x5E93;" title="&#x56FE;&#x4E8C;"></p>
+<p><div align="center"><strong style="width:80%">&#x56FE;2.&#x9632;&#x6B62;&#x4E24;&#x4E2A;UNL&#x4E4B;&#x95F4;&#x51FA;&#x73B0;&#x5206;&#x53C9;&#x6240;&#x9700;&#x7684;&#x8FDE;&#x63A5;&#x6027;&#x793A;&#x4F8B;&#x3002;</strong></div>
+<br>
+<br>
+&#x60F3;&#x8C61;UNLs&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;UNL&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x5927;&#x4E8E;<script type="math/tex; ">0.2 * n_{total}</script>&#x3002;&#x6240;&#x8C13;UNL&#xFF0C;&#x6211;&#x4EEC;&#x6307;&#x7684;&#x662F;&#x4E00;&#x7EC4;Server&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;Server&#x8282;&#x70B9;&#x7684;UNL&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4E24;&#x4E2A;UNL&#x4E0D;&#x5171;&#x4EAB;&#x4EFB;&#x4F55;&#x6210;&#x5458;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E2A;UNL&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6B63;&#x786E;&#x7684;&#x5171;&#x8BC6;&#x8FC7;&#x7A0B;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;UNL&#x7684;&#x8FDE;&#x901A;&#x6027;&#x8D85;&#x8FC7;<script type="math/tex; ">0.2 * n_{total}</script>&#xFF0C;&#x90A3;&#x4E48;&#x5206;&#x53C9;&#x5C31;&#x4E0D;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x4E24;&#x4E2A;UNL&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x5206;&#x6B67;&#x4F1A;&#x963B;&#x6320;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x5728;80%&#x9608;&#x503C;&#x4E0A;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x6240;&#x9700;&#x8981;&#x7684;&#x6700;&#x5C0F;&#x8FDE;&#x901A;&#x7387;&#x7684;&#x516C;&#x5F0F;&#xFF1A;
+<br>
+<br></p>
+<p><div align="center"><script type="math/tex; ">|UNL_i \cap UNL_j| \geq \frac{1}{5}max(|UNL_i|, |UNL_j|) \forall i,j \qquad (3)</script></div>
+<br>
+<br>
+&#x8FD9;&#x4E2A;&#x8FB9;&#x754C;&#x5047;&#x8BBE;UNL&#x662F;&#x4E00;&#x79CD;&#x56E2;&#x72B6;&#x7ED3;&#x6784;&#xFF0C;UNL&#x4E2D;&#x90E8;&#x5206;Server&#x8282;&#x70B9;&#x540C;&#x65F6;&#x4E5F;&#x5C5E;&#x4E8E;&#x5176;&#x5B83;&#x7684;UNL&#xFF0C;&#x6700;&#x5C0F;&#x8FDE;&#x901A;&#x7387;&#x4FDD;&#x8BC1;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E24;&#x4E2A;UNL&#x80FD;&#x591F;&#x5C31;&#x6B3A;&#x8BC8;&#x4EA4;&#x6613;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4E24;&#x4E2A;UNL&#x65E0;&#x6CD5;&#x5C31;&#x6B3A;&#x8BC8;&#x4EA4;&#x6613;&#x8FBE;&#x5230;80%&#x7684;&#x5171;&#x8BC6;&#x95E8;&#x69DB;&#x3002;&#x5982;&#x679C;&#x8FD8;&#x8003;&#x8651;&#x5230;UNL&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x63A5;&#x8FB9;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x66F4;&#x7D27;&#x7684;&#x8FB9;&#x754C;&#xFF08;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x6240;&#x9700;&#x8981;&#x7684;&#x6700;&#x5C0F;&#x8FDE;&#x901A;&#x7387;&#x4F1A;&#x66F4;&#x52A0;&#x5C0F;&#xFF09;&#x3002;&#x5982;&#x679C;&#x7F51;&#x7EDC;&#x7684;&#x7ED3;&#x6784;&#x4E0D;&#x662F;&#x56E2;&#x72B6;&#x7684;&#xFF0C;&#x7531;&#x4E8E;UNL&#x4E4B;&#x95F4;&#x7684;&#x7EA0;&#x7F20;&#x7A0B;&#x5EA6;&#x66F4;&#x5927;&#xFF0C;&#x5206;&#x53C9;&#x5C06;&#x53D8;&#x5F97;&#x66F4;&#x96BE;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5BF9;&#x76F8;&#x4EA4;&#x8282;&#x70B9;&#x7684;&#x6027;&#x8D28;&#x4F5C;&#x51FA;&#x4EFB;&#x4F55;&#x5047;&#x8BBE;&#x3002;&#x4E24;&#x4E2A;UNL&#x7684;&#x4EA4;&#x96C6;&#x53EF;&#x80FD;&#x5305;&#x62EC;faulty&#x8282;&#x70B9;&#xFF0C;&#x4F46;&#x53EA;&#x8981;&#x4EA4;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x5927;&#x4E8E;&#x4FDD;&#x8BC1;&#x5171;&#x8BC6;&#x8FC7;&#x7A0B;&#x6240;&#x9700;&#x7684;&#x9600;&#x503C;&#xFF0C;&#x5E76;&#x4E14;faulty&#x8282;&#x70B9;&#x7684;&#x603B;&#x6570;&#x5C0F;&#x4E8E;&#x6EE1;&#x8DB3;&#x6B63;&#x786E;&#x6027;&#x6240;&#x9700;&#x7684;&#x9600;&#x503C;&#xFF0C;&#x5219;&#x6B63;&#x786E;&#x6027;&#x548C;&#x4E00;&#x81F4;&#x6027;&#x90FD;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4FDD;&#x8BC1;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5171;&#x8BC6;&#x8FBE;&#x6210;&#x4E0E;&#x5426;&#x4EC5;&#x53D6;&#x51B3;&#x4E8E;UNL&#x4E4B;&#x95F4;&#x8282;&#x70B9;&#x7684;&#x76F8;&#x4EA4;&#x6570;&#x91CF;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53D6;&#x51B3;&#x4E8E;UNL&#x4E4B;&#x95F4;unfaulty&#x8282;&#x70B9;&#x7684;&#x76F8;&#x4EA4;&#x6570;&#x91CF;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section3.html" class="navigation navigation-prev " aria-label="Previous page: 正确性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section5.html" class="navigation navigation-next " aria-label="Next page: 可用性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一致性","level":"1.4.3.4","depth":3,"next":{"title":"可用性","level":"1.4.3.5","depth":3,"path":"chapter3/section3/section5.md","ref":"chapter3/section3/section5.md","articles":[]},"previous":{"title":"正确性","level":"1.4.3.3","depth":3,"path":"chapter3/section3/section3.md","ref":"chapter3/section3/section3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","livereload"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/section3/section4.md","mtime":"2019-02-20T03:46:09.896Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-20T03:52:54.391Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

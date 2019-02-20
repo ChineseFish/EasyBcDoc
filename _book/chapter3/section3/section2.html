@@ -1,0 +1,450 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>交易共识 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section3.html" />
+    
+    
+    <link rel="prev" href="section1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chapter1/">
+            
+                <a href="../../chapter1/">
+            
+                    
+                    服务器部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../chapter2/">
+            
+                <a href="../../chapter2/">
+            
+                    
+                    客户端安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    原理介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section1.html">
+            
+                <a href="../section1.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section2.html">
+            
+                <a href="../section2.html">
+            
+                    
+                    交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Ripple共识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    交易校验和合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    交易共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    正确性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    一致性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../section4.html">
+            
+                <a href="../section4.html">
+            
+                    
+                    回收硬盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../section5.html">
+            
+                <a href="../section5.html">
+            
+                    
+                    简化的支付确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../section6.html">
+            
+                <a href="../section6.html">
+            
+                    
+                    结论
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >交易共识</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4EA4;&#x6613;&#x5171;&#x8BC6;">&#x4EA4;&#x6613;&#x5171;&#x8BC6;</h1>
+<p>UNL&#x4E2D;&#x7684;Server&#x8282;&#x70B9;&#x5BF9;&#x5408;&#x5E76;&#x4E4B;&#x540E;&#x7684;cadidate set&#x4E2D;&#x7684;&#x4EA4;&#x6613;&#x8FDB;&#x884C;&#x6295;&#x7968;&#x3002;&#x83B7;&#x5F97;&#x201C;&#x8D5E;&#x6210;&#x201D;&#x7968;&#x6570;&#x8D85;&#x8FC7;&#x6700;&#x4F4E;&#x767E;&#x5206;&#x6BD4;&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x5C06;&#x4F20;&#x9012;&#x5230;&#x4E0B;&#x4E00;&#x8F6E;&#xFF0C;&#x800C;&#x672A;&#x83B7;&#x5F97;&#x8DB3;&#x591F;&#x7968;&#x6570;&#x7684;&#x4EA4;&#x6613;&#x5C06;&#x88AB;&#x653E;&#x5F03;&#xFF0C;&#x6216;&#x5217;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;Open Ledger&#x7684;candidate set&#x3002;&#x6700;&#x540E;&#x4E00;&#x8F6E;&#x540C;&#x6B65;&#x8FC7;&#x7A0B;&#x8981;&#x6C42;candidate set&#x4E2D;&#x7684;&#x4EA4;&#x6613;&#x81F3;&#x5C11;&#x83B7;&#x53D6;80%&#x7684;Server&#x8282;&#x70B9;&#x7684;&#x786E;&#x8BA4;&#x3002;&#x5269;&#x4F59;&#x4E0B;&#x6765;&#x7684;&#x6240;&#x6709;&#x7684;&#x4EA4;&#x6613;&#x4F1A;&#x88AB;&#x7528;&#x4E8E;&#x4E0B;&#x4E00;&#x4E2A;Open Ledger&#xFF0C;&#x5F53;&#x524D;&#x7684;Open Ledger&#x968F;&#x540E;&#x4F1A;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x4ECE;&#x800C;&#x8F6C;&#x53D8;&#x4E3A;Last-Closed Ledger&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section1.html" class="navigation navigation-prev " aria-label="Previous page: 交易校验和合并">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section3.html" class="navigation navigation-next " aria-label="Next page: 正确性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"交易共识","level":"1.4.3.2","depth":3,"next":{"title":"正确性","level":"1.4.3.3","depth":3,"path":"chapter3/section3/section3.md","ref":"chapter3/section3/section3.md","articles":[]},"previous":{"title":"交易校验和合并","level":"1.4.3.1","depth":3,"path":"chapter3/section3/section1.md","ref":"chapter3/section3/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","livereload"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/section3/section2.md","mtime":"2019-02-20T03:36:58.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-20T03:52:54.391Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
